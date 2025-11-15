@@ -1,0 +1,51 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+
+		<!-- NuGet Packaging -->
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<PackageId>DotNetCoreOutputToConsole</PackageId>
+		<Version>1.0.0</Version>
+		<Authors>livecode</Authors>
+		<Company></Company>
+
+		<Description>
+			A lightweight ASP.NET Core helper library that outputs console.log/info/warn/error/table safely to the browser console during Development and UAT.
+		</Description>
+
+		<PackageTags>
+			aspnetcore;console;browser-console;debug;devtools;script;logging;development;diagnostics
+		</PackageTags>
+
+		<RepositoryUrl>
+			https://github.com/livedcode/DotNetCoreOutputToConsole</RepositoryUrl>
+		<PackageProjectUrl>
+			https://github.com/livedcode/DotNetCoreOutputToConsole</PackageProjectUrl>
+
+		<!-- MIT license -->
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+
+		<PackageReleaseNotes>Initial release of DotNetCoreOutputToConsole.</PackageReleaseNotes>
+
+		<!-- NuGet shows README.md -->
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+
+		<!-- Enable IntelliSense XML docs -->
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.3.0" />
+	</ItemGroup>
+
+	<!-- Files to include in NuGet package -->
+	<ItemGroup>
+		<None Include="README.md" Pack="true" PackagePath="" />
+		<None Include="LICENSE" Pack="true" PackagePath="" />
+	</ItemGroup>
+	
+</Project>

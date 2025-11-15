@@ -1,0 +1,13 @@
+﻿{
+  "profiles": {
+    "MinimalApiConsoleTestApp": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "applicationUrl": "https://localhost:7110;http://localhost:6510",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}
